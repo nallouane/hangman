@@ -1,6 +1,6 @@
 import random
 
-word_list = [
+list_of_favourite_fruit = [
     "apple",
     "banana",
     "orange",
@@ -8,16 +8,16 @@ word_list = [
     "tomato"
 ]
 
-print(word_list)
+print(list_of_favourite_fruit)
 
-word = random.choice(word_list)
+word = random.choice(list_of_favourite_fruit)
 
 print("Randomly chosen word:", word)
 
 
-guess = input("Enter a single letter: ")
+single_letter_guess = input("Enter a single letter: ")
 
-if guess.isalpha() and len(guess) == 1:
+if single_letter_guess.isalpha() and len(single_letter_guess) == 1: # checking if the input is alphabetical and of single length
     print("Good guess!")
     
 else:
