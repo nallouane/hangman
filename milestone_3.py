@@ -10,13 +10,12 @@ list_of_favourite_fruit = [
 
 print(list_of_favourite_fruit)
 
-random_word = random.choice(list_of_favourite_fruit)
+random_word_from_list_of_favourite_fruit = random.choice(list_of_favourite_fruit)
 
 def ask_for_input():
     while True:
         single_letter_guess = input("Enter a single letter: ")
         
-
         if single_letter_guess.isalpha() and len(single_letter_guess) == 1:
             print("Good guess!")
             return single_letter_guess.lower()
@@ -30,4 +29,4 @@ def check_guess(single_letter_guess, word):
     else:
         print(f"Sorry, {single_letter_guess} is not in the word. Try again.")    
                             
-check_guess(ask_for_input(), random_word)
+check_guess(ask_for_input(), random_word_from_list_of_favourite_fruit)
