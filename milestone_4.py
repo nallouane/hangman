@@ -15,9 +15,16 @@ class Hangman:
     def check_guess(self, single_letter_guess):
         if single_letter_guess in self.word:
             print(f"Great! {single_letter_guess} is in the word.")
+            for index, letter in enumerate(self.word):
+                if single_letter_guess == letter:
+                    self.word_guessed[index] = letter           
+            self.num_letters_left -= 1        
+            print("You have {num_lives} lives left.")
 
-        else:
+        else:           
+            self.num_letters_left -= 1 
             print(f"Sorry, {single_letter_guess} is not in the word. Try again.")  
+            print("You have {num_lives} lives left.")
     
     def ask_for_input(self):
         while True:
