@@ -38,4 +38,4 @@ The progression of my code is seen in the milestone_.py files. The full game is 
 ## License
 
 Specify the license under which your Hangman project is distributed.
-This project is licensed under the [MIT License](./LICENSE.md).
+This project is licensed under the [MIT License](./LICENSE).
