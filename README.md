@@ -16,8 +16,6 @@ Hangman is a classic game in which a player thinks of a word, and the other play
 
 This project is an implementation of the Hangman game, where the computer thinks of a word, and the user tries to guess it.
 
-The Hangman game implementation involves using a while loop to first get a valid input letter. This input is then checked against a word to see if the letter is contained in the word.
-
 <!-- Installation instructions -->
 ## Installation
 
@@ -28,7 +26,7 @@ Just run milestone_5.py and enter your guess!
 ## Usage
 
 Instructions on how to play the Hangman game...
-The game will guide you to input a single alphabetical letter. Upon doing so, it will verify whether the guessed letter is part of the target word. If correct, you will receive information about the position of the letter within the word, along with the number of letters remaining. In case of an incorrect guess, you will lose a life, and the game will notify you of the remaining lives.
+The game will guide you to input a single alphabetical letter. Upon doing so, it will verify whether the guessed letter is part of the target word. If correct, you will receive information about the position of the letter within the word, along with the number of letters remaining. In case of an incorrect guess, you will lose a life, and the game will notify you of the remaining lives. In my game the player starts with 5 lives, best of luck!
 
 <!-- File structure of the project -->
 ## File Structure
