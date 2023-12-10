@@ -19,12 +19,14 @@ class Hangman:
                 if single_letter_guess == letter:
                     self.word_guessed[index] = letter           
             self.num_letters_left -= 1        
-            print(f"You have {self.num_lives_left} lives left.")
 
         else:           
             self.num_lives_left -= 1 
-            print(f"Sorry, {single_letter_guess} is not in the word. Try again.")  
-            print(f"You have {self.num_lives_left} lives left.")
+            print(f"Sorry, {single_letter_guess} is not in the word. Try again.") 
+        
+        print(self.word_guessed)
+        print(f"You have {self.num_lives_left} {'lives' if self.num_lives_left == 1 else 'life'} left.")    
+        print(f"You have {self.num_letters_left} {'letters' if self.num_letters_left == 1 else 'letter'} left.")
     
     def ask_for_input(self):
         while True:
@@ -37,7 +39,22 @@ class Hangman:
             else: 
                 self.check_guess(single_letter_guess)
                 self.list_of_guesses.append(single_letter_guess.lower())
+                break
                 
+def play_game(word_list):
+    num_lives = 5
+    game = Hangman(word_list, num_lives)                
+    while True:
+        if game.num_lives_left == 0:
+            print("You lost!")
+            break
+        elif game.num_letters_left == 0:
+            print("Congratulations. You won the game!")
+            break
+        else:
+            game.ask_for_input()
+                    
+
 list_of_favourite_fruit = [
     "apple",
     "banana",
@@ -45,6 +62,5 @@ list_of_favourite_fruit = [
     "pear",
     "tomato"
 ]                
-                
-person1 = Hangman(list_of_favourite_fruit)              
-person1.ask_for_input()    
+                    
+play_game(list_of_favourite_fruit)                           
