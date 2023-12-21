@@ -25,8 +25,8 @@ class Hangman:
             print(f"Sorry, {single_letter_guess} is not in the word. Try again.") 
         
         print(self.word_guessed)
-        print(f"You have {self.num_lives_left} {'lives' if self.num_lives_left == 1 else 'life'} left.")    
-        print(f"You have {self.num_letters_left} {'letters' if self.num_letters_left == 1 else 'letter'} left.")
+        print(f"You have {self.num_lives_left} {'life' if self.num_lives_left == 1 else 'lives'} left.")    
+        print(f"You have {self.num_letters_left} {'life' if self.num_letters_left == 1 else 'lives'} left.")
     
     def ask_for_input(self):
         while True:
