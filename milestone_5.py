@@ -26,7 +26,7 @@ class Hangman:
         
         print(self.word_guessed)
         print(f"You have {self.num_lives_left} {'life' if self.num_lives_left == 1 else 'lives'} left.")    
-        print(f"You have {self.num_letters_left} {'life' if self.num_letters_left == 1 else 'lives'} left.")
+        print(f"You have {self.num_letters_left} {'letter' if self.num_letters_left == 1 else 'letters'} left.")
     
     def ask_for_input(self):
         while True:
