@@ -63,4 +63,6 @@ list_of_favourite_fruit = [
     "tomato"
 ]                
                     
-play_game(list_of_favourite_fruit)                           
+print('Welcome to Hangman! guess a letter of the word! good luck!')                    
+play_game(list_of_favourite_fruit)               
+            
